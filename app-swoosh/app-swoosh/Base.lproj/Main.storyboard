@@ -44,7 +44,7 @@
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Найди единомышлинников и наслаждайтесь игрой" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T8e-Bs-b6T">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Найди единомышлинников и наслаждайся игрой" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T8e-Bs-b6T">
                                 <rect key="frame" x="241.5" y="232" width="285" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="odT-1l-mEE"/>
@@ -106,8 +106,219 @@
             </objects>
             <point key="canvasLocation" x="134.765625" y="132.65007320644216"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="r80-Jd-3fo">
+            <objects>
+                <viewController id="0by-SF-UA9" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4r5-Yv-E8y"/>
+                        <viewControllerLayoutGuide type="bottom" id="hHY-d7-SOq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IWz-Dn-0lC">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="desiredLeagueBG" translatesAutoresizingMaskIntoConstraints="NO" id="tC6-Lr-m1c">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edE-6t-uvy" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
+                                <rect key="frame" x="20" y="954" width="728" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="Y9d-lP-JTa"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="50" id="aZ5-Ds-vCN"/>
+                                    <constraint firstAttribute="height" constant="50" id="fA9-rq-wwa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="ДАЛЕЕ"/>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="1sa-OO-VhJ">
+                                <rect key="frame" x="20" y="166.5" width="728" height="190"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hhs-rU-CtX" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="728" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="FJc-dZ-uQ5"/>
+                                            <constraint firstAttribute="height" constant="50" id="ZaB-Oo-0B6"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                        <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Мужская"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="juB-AQ-uBT" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="70" width="728" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="NeU-LJ-fng"/>
+                                            <constraint firstAttribute="height" constant="50" id="aTM-BB-080"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                        <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Женская"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6II-vO-aLz" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="140" width="728" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="287-8c-nxW"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="IhR-D6-Pzb"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                        <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Смешанная"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="kI9-dk-5gv">
+                                <rect key="frame" x="20" y="40" width="728" height="76.5"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swooshLogo" translatesAutoresizingMaskIntoConstraints="NO" id="xjK-9N-mMH">
+                                        <rect key="frame" x="304.5" y="0.0" width="119" height="20"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Выберите лигу:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZMG-lK-hTI">
+                                        <rect key="frame" x="214" y="46" width="300" height="30.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30.329999999999998" id="C9o-q3-kR3"/>
+                                            <constraint firstAttribute="width" constant="300" id="UD2-5A-k5l"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="22"/>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tC6-Lr-m1c" firstAttribute="leading" secondItem="IWz-Dn-0lC" secondAttribute="leading" id="2Zl-hb-CqT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kI9-dk-5gv" secondAttribute="trailing" id="2jF-aw-5OO"/>
+                            <constraint firstItem="kI9-dk-5gv" firstAttribute="leading" secondItem="IWz-Dn-0lC" secondAttribute="leadingMargin" id="73n-5O-eOl"/>
+                            <constraint firstItem="1sa-OO-VhJ" firstAttribute="leading" secondItem="IWz-Dn-0lC" secondAttribute="leadingMargin" id="7SV-AC-805"/>
+                            <constraint firstItem="hHY-d7-SOq" firstAttribute="top" secondItem="edE-6t-uvy" secondAttribute="bottom" constant="20" id="ADo-e2-Pzl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1sa-OO-VhJ" secondAttribute="trailing" id="Ahw-fm-re9"/>
+                            <constraint firstItem="tC6-Lr-m1c" firstAttribute="leading" secondItem="IWz-Dn-0lC" secondAttribute="leading" id="DoB-Oy-2e0"/>
+                            <constraint firstItem="hHY-d7-SOq" firstAttribute="top" secondItem="tC6-Lr-m1c" secondAttribute="bottom" id="Opn-7n-P8C"/>
+                            <constraint firstItem="edE-6t-uvy" firstAttribute="leading" secondItem="IWz-Dn-0lC" secondAttribute="leadingMargin" id="bGa-YV-ieI"/>
+                            <constraint firstItem="1sa-OO-VhJ" firstAttribute="top" secondItem="kI9-dk-5gv" secondAttribute="bottom" constant="50" id="gyN-N9-l0i"/>
+                            <constraint firstItem="hHY-d7-SOq" firstAttribute="top" secondItem="tC6-Lr-m1c" secondAttribute="bottom" id="hbk-jz-6nt"/>
+                            <constraint firstAttribute="trailing" secondItem="tC6-Lr-m1c" secondAttribute="trailing" id="kzO-qM-XtH"/>
+                            <constraint firstItem="tC6-Lr-m1c" firstAttribute="top" secondItem="IWz-Dn-0lC" secondAttribute="top" id="mQ2-nY-XxW"/>
+                            <constraint firstItem="kI9-dk-5gv" firstAttribute="top" secondItem="4r5-Yv-E8y" secondAttribute="bottom" constant="20" id="mr6-lN-wPj"/>
+                            <constraint firstItem="edE-6t-uvy" firstAttribute="trailing" secondItem="IWz-Dn-0lC" secondAttribute="trailingMargin" id="nKn-EZ-Iih"/>
+                            <constraint firstItem="tC6-Lr-m1c" firstAttribute="top" secondItem="IWz-Dn-0lC" secondAttribute="top" id="soB-5T-jfJ"/>
+                            <constraint firstAttribute="trailing" secondItem="tC6-Lr-m1c" secondAttribute="trailing" id="ztv-04-03K"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gA8-56-QE0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="878.26086956521749" y="131.25"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="zsn-P8-cqe">
+            <objects>
+                <viewController id="0HY-9s-nOw" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8op-Gv-C5h"/>
+                        <viewControllerLayoutGuide type="bottom" id="D77-B9-FZJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7yK-7o-hKl">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backButton" translatesAutoresizingMaskIntoConstraints="NO" id="fxn-75-ybb">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beginnerBallerBG" translatesAutoresizingMaskIntoConstraints="NO" id="Fxa-XW-Wkg">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nTR-bh-8Eg" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
+                                <rect key="frame" x="20" y="954" width="728" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="KbD-2q-xzJ"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="50" id="q9Z-ab-oxe"/>
+                                    <constraint firstAttribute="height" constant="50" id="wGb-cz-tGg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Завершить"/>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="4t8-bg-mQK">
+                                <rect key="frame" x="20" y="40" width="728" height="76.5"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swooshLogo" translatesAutoresizingMaskIntoConstraints="NO" id="TaR-cW-jNH">
+                                        <rect key="frame" x="304.5" y="0.0" width="119" height="20"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Я..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rae-ux-Dbh">
+                                        <rect key="frame" x="214" y="46" width="300" height="30.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="300" id="58Q-31-uDI"/>
+                                            <constraint firstAttribute="height" constant="30.329999999999998" id="sHk-F2-462"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="22"/>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" spacing="37" translatesAutoresizingMaskIntoConstraints="NO" id="Gsv-Ln-RDx">
+                                <rect key="frame" x="20" y="204" width="728" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xRj-wl-OYm" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="345.5" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="rmN-vV-rdH"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="sJg-rw-f5O"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                        <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Новичок"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7tJ-f7-kb4" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
+                                        <rect key="frame" x="382.5" y="0.0" width="345.5" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="OuV-Qb-v4y"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="r5d-GN-E2H"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                        <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Бывалый"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Gsv-Ln-RDx" secondAttribute="trailing" id="1gh-Pn-wUX"/>
+                            <constraint firstItem="nTR-bh-8Eg" firstAttribute="leading" secondItem="7yK-7o-hKl" secondAttribute="leadingMargin" id="8Oa-M1-aK7"/>
+                            <constraint firstItem="4t8-bg-mQK" firstAttribute="leading" secondItem="7yK-7o-hKl" secondAttribute="leadingMargin" id="DUd-kW-g9s"/>
+                            <constraint firstItem="D77-B9-FZJ" firstAttribute="top" secondItem="nTR-bh-8Eg" secondAttribute="bottom" constant="20" id="NmL-8P-WJj"/>
+                            <constraint firstItem="4t8-bg-mQK" firstAttribute="top" secondItem="8op-Gv-C5h" secondAttribute="bottom" constant="20" id="O7f-b6-6GB"/>
+                            <constraint firstItem="Fxa-XW-Wkg" firstAttribute="top" secondItem="7yK-7o-hKl" secondAttribute="top" id="bFp-8E-8zI"/>
+                            <constraint firstItem="Fxa-XW-Wkg" firstAttribute="leading" secondItem="7yK-7o-hKl" secondAttribute="leading" id="kXu-6S-Ggg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nTR-bh-8Eg" secondAttribute="trailing" id="lI8-pq-Lxd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4t8-bg-mQK" secondAttribute="trailing" id="lKv-hE-6RP"/>
+                            <constraint firstAttribute="trailing" secondItem="Fxa-XW-Wkg" secondAttribute="trailing" id="uNR-3F-xyy"/>
+                            <constraint firstItem="D77-B9-FZJ" firstAttribute="top" secondItem="Fxa-XW-Wkg" secondAttribute="bottom" id="xtz-5q-taW"/>
+                            <constraint firstItem="Gsv-Ln-RDx" firstAttribute="leading" secondItem="7yK-7o-hKl" secondAttribute="leadingMargin" id="ysh-8q-uBm"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nHN-3s-mBS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1718.840579710145" y="131.25"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="backButton" width="29" height="24"/>
+        <image name="beginnerBallerBG" width="414" height="736"/>
+        <image name="desiredLeagueBG" width="414" height="736"/>
         <image name="swooshLogo" width="119" height="20"/>
         <image name="welcomeScreenBG" width="414" height="736"/>
     </resources>
