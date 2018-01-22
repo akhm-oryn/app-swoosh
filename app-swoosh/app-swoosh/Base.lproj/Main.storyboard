@@ -100,10 +100,6 @@
                             <constraint firstItem="Ppr-jk-l0q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zDR-Fl-SG3"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="bgimg" destination="gLj-lh-mRL" id="wSM-9p-FMK"/>
-                        <outlet property="swoosh" destination="6XA-1H-vZ5" id="MLz-en-7cH"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
